@@ -1,8 +1,8 @@
+
 public class NewNodeArrayList <N> {
 
     private Node root; // creating instance variables
     private int length = 1;
-
 
     public NewNodeArrayList (){ // creating an empty constructor
         this.root = root;
