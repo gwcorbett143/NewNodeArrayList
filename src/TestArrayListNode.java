@@ -15,6 +15,8 @@ public class TestArrayListNode {
         n.add(node);
         System.out.println(n.size());
         n.remove(3);
+        n.set(2,node);
+        System.out.println(n.get(2));
         System.out.println(n.size());
         n.remove(0);
         System.out.println(n.size());
