@@ -46,28 +46,28 @@ public class NewNodeArrayList <N> {
         return (N) temp.getData(); // returning the temp node data;
     }
 
-        public N get ( int index){
-            Node temp = root;
-            for (int i = 0; i <= index; i++) {
-                temp = temp.getChild();
+        public N get ( int index){ //returns the node at an index
+            Node temp = root; //creating a temporary node
+            for (int i = 0; i <= index; i++) { //loops through array
+                temp = temp.getChild(); //setting to most recent node at index i
             }
-            return (N) temp.getData();
+            return (N) temp.getData(); //returns the node at index
         }
 
-        void set ( int index, N data){
-            Node temp = root;
-            for (int i = 0; i <= index; i++) {
-                temp = temp.getChild();
+        void set ( int index, N data){ //sets a node at an index
+            Node temp = root;  //creating a temporary node
+            for (int i = 0; i <= index; i++) { //loops through array until index
+                temp = temp.getChild(); //setting to most recent node at index i
             }
-            temp.setData(data);
+            temp.setData(data); //sets node at index to data
         }
 
-        public int size () {
-            int size = 0;
-            for (int i = 0; i != -1; i++) {
-                size++;
+        public int size () { //returns sixe of index
+            int size = 0; //starts at 0 as default
+            for (int i = 0; i != -1; i++) { //loops through until there are no more buckets
+                size++; //increases the size by bucket
             }
-            return size;
+            return size; //returns the int of the size
         }
 }
 
